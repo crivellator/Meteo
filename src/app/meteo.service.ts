@@ -8,7 +8,7 @@ import { HttpClient } from '@angular/common/http'
 export class MeteoService {
   // private API_key: string = environment.chiaveSegreta;
   private API_key: string ="934e7168d719ebdd40bc114d14bcfa6b";
-  private localtown = `http://api.openweathermap.org/geo/1.0/direct?q=`;
+  private localtown = `https://api.openweathermap.org/geo/1.0/direct?q=`;
 
   constructor(private http: HttpClient) { }
 

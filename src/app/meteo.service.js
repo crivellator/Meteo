@@ -8,11 +8,11 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 exports.__esModule = true;
 exports.MeteoService = void 0;
 var core_1 = require("@angular/core");
-var environment_1 = require("src/environments/environment");
+var environmentTest_1 = require("src/environments/environmentTest");
 var MeteoService = /** @class */ (function () {
     function MeteoService(http) {
         this.http = http;
-        this.API_key = environment_1.environment.chiaveSegreta;
+        this.API_key = environmentTest_1.environment.chiaveSegreta;
         this.localtown = "http://api.openweathermap.org/geo/1.0/direct?q=";
     }
     MeteoService.prototype.prendiCitta = function (citta) {

@@ -1,0 +1,11 @@
+<div class="contenedor">
+  <div>
+    <input type="text" [(ngModel)]="userCity" placeholder="City name here...">
+    <button type="button" (click)="ricerca()">HOW'S WEATHER?</button>
+    <h1 [hidden]="nascosto">Meteo for {{citta.name}}:</h1>
+    <img [src]="iconaURL">
+    <h3 [hidden]="nascosto">Today at {{citta.name}} weather is {{citta.weather[0].description}}</h3>
+    <h3 [hidden]="nascosto">Temperature is {{(citta.main.temp).toFixed(2)}} °C</h3>
+    <!-- con .toFixed(n) arrotondiamo la precisione dei numeri decimali, altrimenti esce na sfilza de numeri ooo-->
+  </div>
+</div>

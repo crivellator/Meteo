@@ -17,6 +17,6 @@ export class MeteoService {
   }
 
   prendiMeteo(lat: number, lon: number) {
-    return this.http.get(`http://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${this.API_key}`);
+    return this.http.get(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${this.API_key}`);
   }
 }
